@@ -2,6 +2,8 @@
   color: #004C67;
   font-family: Arial;
   font-size: 20pt;
+  width: 100%;
+  padding: 0;
   background: #f4fafe;
   /* Old browsers */
   background: -moz-linear-gradient(top, #f4fafe 0%, #ccf0f0 100%);
