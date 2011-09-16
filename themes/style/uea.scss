@@ -22,7 +22,7 @@
 .deck-container {
 	color:#004C67;
 	font-family: Arial;
-	font-size:20pt;
+	font-size:1.25em;
 	width:100%;
 	padding:0;
 	background: rgb(244,250,254); /* Old browsers */
@@ -43,24 +43,24 @@
 	
 	h1 {
 		color:#004C67;
-		font-size:32pt;
 		font-weight:bold;
+		font-size:3em;
 		div {
 		    color:#ACA095;
 		    font-weight:normal;
-		}
-		    
+		}   
 	}
 
 	h2 {
 	    background:url(uealogo.png) no-repeat right;
-	    height:150px;
+	    background-size: contain;
+	    padding: 0 3em 0 0;
 		color:#004C67;
-		font-size:24pt;
 		font-weight:bold;
+		font-size:2em;
+		line-height:1.5em;
+		height:3em;
 		border-bottom: 1px solid #ACA095;
-		padding:0;
-		line-height:75px;
 		div {
 		    color: #ACA095;
 		    font-weight:normal;
