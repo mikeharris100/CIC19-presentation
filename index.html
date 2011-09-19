@@ -83,7 +83,9 @@
 
 <div class="slide">
     <h2>The Reference Experiment</h2>
-    <img src="nott-screen.jpg"/>
+    <div id="nott-frame">
+        <img src="nott-screen.jpg"/>
+    </div>
 </div>
 
 <div class="slide">
@@ -334,6 +336,13 @@
     $(function() {
         // Deck initialization
         $.deck('.slide');
+
+        var testimg = new Image();
+        testimg.onload = function(){
+            console.log("Loading external site");
+            $("#nott-frame").html('<iframe src="http://hdri.cs.nott.ac.uk" frameborder="0" width="90%" height="70%"/>');
+        }
+        testimg.src= "http://hdri.cs.nott.ac.uk/v1/hdrimage/atriumnight/AtriumNight_Hier.jpg";
     });
 </script>
 
