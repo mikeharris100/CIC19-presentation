@@ -1,7 +1,7 @@
 .deck-container {
   color: #004C67;
   font-family: Arial;
-  font-size: 1.25em;
+  font-size: 1.4em;
   width: 100%;
   padding: 0;
   background: #f4fafe;
@@ -44,7 +44,7 @@
   .deck-container h3 {
     color: #000; }
   .deck-container table {
-    margin: 1em auto; }
+    margin: 0 auto; }
     .deck-container table thead {
       border-bottom: 2px solid #ACA095; }
       .deck-container table thead th {
