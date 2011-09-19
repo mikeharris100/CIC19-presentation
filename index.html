@@ -328,7 +328,12 @@
 <script src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 <!-- Specific to this page -->
-<script src="main.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // Deck initialization
+        $.deck('.slide');
+    });
+</script>
 
 </body>
 </html>
