@@ -364,7 +364,7 @@
             var updateStats = function(){
                 console.log("calling updatestats");
                 $.getJSON("http://colourwar.com/stats/api/?callback=?", function(data){
-                    console.log("data recieved");
+                    console.log("data received");
                     cmps.text(data.comparisons);
                     prts.text(data.participants);
                     usrs.text(data.users);
