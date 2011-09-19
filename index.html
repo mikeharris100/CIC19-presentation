@@ -282,6 +282,17 @@
     </table>
 </div>
 
+<div class="slide" id="colourwarstats">
+    <h2>Colourwar</h2>
+    <div class="box">
+        <ul>
+            <li><span id="colourwarstats-comparisons"></span> comparisons made so far</li>
+            <li><span id="colourwarstats-participants"></span> participants</li>
+            <li><span id="colourwarstats-users"></span> registered users</li>
+        </ul>
+    </div>
+</div>
+
 <div class="slide">
     <h2>In conclusion</h2>
     <p>you cant just sling stuff on the web and hope for the best</p>
@@ -316,6 +327,7 @@
 <script src="deck/extensions/goto/deck.goto.js"></script>
 <script src="deck/extensions/status/deck.status.js"></script>
 <script src="deck/extensions/hash/deck.hash.js"></script>
+<script src="extensions/events/deck.events.js"></script>
 
 <!-- MathJax -->
 <script src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -326,12 +338,48 @@
         // Deck initialization
         $.deck('.slide');
 
+        $.ajaxSetup({ cache: false });
+
         var testimg = new Image();
         testimg.onload = function(){
-            console.log("Loading external site");
-            $("#nott-frame").html('<iframe src="http://hdri.cs.nott.ac.uk" frameborder="0" width="90%" height="70%"/>');
-        }
-        testimg.src= "http://hdri.cs.nott.ac.uk/v1/hdrimage/atriumnight/AtriumNight_Hier.jpg";
+            console.log("Outside world accessible");
+            $("#nott-frame").html('<iframe src="http://hdri.cs.nott.ac.uk" frameborder="0"/>');
+
+            var refreshId;
+            var cmps = $('#colourwarstats-comparisons');
+            var prts = $('#colourwarstats-participants');
+            var usrs = $('#colourwarstats-users');
+
+            var updateStats = function(){
+                console.log("calling updatestats");
+                $.getJSON("http://colourwar.com/stats/api/?callback=?", function(data){
+                    console.log("data recieved");
+                    cmps.text(data.comparisons);
+                    prts.text(data.participants);
+                    usrs.text(data.users);
+                });
+            }
+
+            updateStats();
+
+            $('#colourwarstats').bind('deck.becameCurrent', function(event){
+                console.log("became current");
+
+                updateStats();
+
+                refreshId = setInterval(function() {
+                    updateStats()
+                }, 3000);
+
+            }).bind('deck.lostCurrent', function(event){
+                console.log("lost current");
+                clearInterval(refreshId);
+
+            });
+
+       }
+        testimg.src= "http://colourwar.com/site_media/static/img/ucglogo.png";
+
     });
 </script>
 
