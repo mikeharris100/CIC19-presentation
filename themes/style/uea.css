@@ -63,8 +63,6 @@
         border-right: 1px solid #ACA095; }
       .deck-container table tbody td {
         padding: 0.3em; }
-      .deck-container table tbody td:nth-of-type(2) {
-        border-right: 1px solid #ACA095; }
   .deck-container pre, .deck-container .box {
     border-color: #cde;
     background: #fff;

@@ -28,16 +28,30 @@
     <!-- Specific to this page -->
     <style type="text/css">
 
-        #nott-frame{
+        .web-frame{
             width:100%;
             height:75%;
         }
 
-        #nott-frame iframe,
-        #nott-hdri img{
+        .web-frame iframe{
             width:100%;
             height:100%;
         }
+
+        .web-frame img{
+            max-height:100%;
+            max-width:100%;
+        }
+
+        .deck-container .twocol{
+            width:30%;
+            margin:0 10%;
+            float:left;
+        }
+
+        #colourwar-correlations td:nth-of-type(2){
+	        border-right: 1px solid #ACA095;
+	    }
 
     </style>
 
@@ -53,11 +67,12 @@
 
 <div class="slide">
     <h2>Paired Comparisons</h2>
+    <img src="images/pears.png" style="max-height:50%; max-width:100%;"/>
     <p>paired comparisons have become de facto for observer preference</p>
     <p>estimate time to set up / num participants</p>
     <ul>
-        <li class="slide">How many of you have performed a paired comparison experiment?</li>
-        <li class="slide">How many of those were satisfied with the numbers of participants?</li>
+        <li>How many of you have performed a paired comparison experiment?</li>
+        <li>How many of those were satisfied with the numbers of participants?</li>
     </ul>
 </div>
 
@@ -83,14 +98,14 @@
     <h2>Web-Based Research Success Stories</h2>
     <ul>
         <li>Moroney's colour naming experiment</li>
-        <li class="slide">Randall Munroe<img src="xkcdcolor.png"/></li>
+        <li class="slide">Randall Munroe<img src="images/xkcdcolor.png"/></li>
     </ul>
 </div>
 
 <div class="slide">
     <h2>The Reference Experiment</h2>
-    <div id="nott-frame">
-        <img src="nott-screen.jpg"/>
+    <div id="nott-frame" class="web-frame">
+        <img src="images/nott-screen.jpg"/>
     </div>
 </div>
 
@@ -117,22 +132,99 @@
         <li>controlled environment</li>
         <li>setup to ISO standard</li>
         <li>same images</li>
-        <li>
-            observers were from other departments at university (and were na&iuml;ve to the purpose)
-            <ul>
-                <li>biologists</li>
-                <li>environmental scientists</li>
-                <li>mathematician</li>
-                <li>other comp scis</li>
-            </ul>
-        </li>
+        <li>observers were from other departments at university (and were na&iuml;ve to the purpose)</li>
     </ul>
 </div>
 
 <div class="slide">
-    <h2>Well, What Happened?</h2>
+    <h2>Results<div>Well, What Happened?</div></h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Scene</th>
+                <th>&#964;</th>
+                <th>Significance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Atrium Night</th>
+                <td>0.429</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Belgium</th>
+                <td>0.511</td>
+                <td><em>p</em> &lt; 0.05</td>
+            </tr>
+            <tr>
+                <th>Bristol Bridge</th>
+                <td>0.714</td>
+                <td><em>p</em> &lt; 0.05</td>
+            </tr>
+            <tr>
+                <th>Clock Building</th>
+                <td>0.071</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Fog</th>
+                <td>0.444</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Foyer</th>
+                <td>0.333</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Indoor</th>
+                <td>0.524</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Memorial</th>
+                <td>0.500</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Synagogue</th>
+                <td>0.786</td>
+                <td><em>p</em> &lt; 0.01</td>
+            </tr>
+            <tr>
+                <th>Tahoe</th>
+                <td>0.467</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Tinterna</th>
+                <td>0.867</td>
+                <td><em>p</em> &lt; 0.05</td>
+            </tr>
+            <tr>
+                <th>Tree</th>
+                <td>0.238</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Venice</th>
+                <td>0.143</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="slide">
+    <h2>Results</h2>
+    <img class="twocol" src="images/parallelcoords/synagogue.png"/>
+    <img class="twocol" src="images/parallelcoords/clockbuilding.png"/>
+</div>
+
+<div class="slide">
+    <h2>Results<div>Well, What Happened?</div></h2>
     <ul>
-        <li>look at highest and lowest correlated images</li>
         <li>
             possible reasons for low correlations
             <ul>
@@ -177,13 +269,34 @@
 </div>
 
 <div class="slide">
+    <h2>In conclusion</h2>
+    <p>you cant just sling stuff on the web and hope for the best</p>
+</div>
+
+<div class="slide">
     <h2>Other Possibilities</h2>
     <p>Are other experiments better than TMOs? C2G?</p>
 </div>
 
 <div class="slide">
-    <h2>Colourwar</h2>
-    <table>
+    <h2>Colourwar<div><a href="http://colourwar.com" target="_blank">http://colourwar.com</a><small>&nbsp;&nbsp;&nbsp;&larr; shameless plug</small></h2>
+    <div id="colourwar-frame" class="web-frame">
+        <img src="images/colourwar-screen.png"/>
+    </div>
+</div>
+
+<div class="slide" id="colourwarstats">
+    <h2>Colourwar<div><a href="http://colourwar.com" target="_blank">http://colourwar.com</a></h2>
+    <div class="box" style="width:50%; margin:0 auto; padding:2em;">
+        <h3><em><span id="colourwarstats-comparisons">22062</span></em> comparisons made so far</h3>
+        <h3><em><span id="colourwarstats-participants">908</span></em> participants</h3>
+        <h3><em><span id="colourwarstats-users">65</span></em> registered users</h3>
+    </div>
+</div>
+
+<div class="slide">
+    <h2>Colourwar<div><a href="http://colourwar.com" target="_blank">http://colourwar.com</a></h2>
+    <table id="colourwar-correlations">
         <thead>
             <tr>
                 <th rowspan="2">Scene</th>
@@ -199,118 +312,110 @@
         </thead>
         <tbody>
             <tr>
-                <th>Atriumnight</th>
-                <td>0.4286</td>
+                <th>Atrium Night</th>
+                <td>0.429</td>
                 <td></td>
-                <td>0.8095</td>
-                <td><em>p</em> &lt; 0.01</td>
+                <td>0.810</td>
+                <td><em>p</em> &lt; 0.05</td>
             </tr>
             <tr>
                 <th>Belgium</th>
-                <td>0.5111</td>
-                <td><em>p</em> &lt; 0.01</td>
-                <td>0.7778</td>
-                <td><em>p</em> &lt; 0.01</td>
-            </tr>
-            <tr>
-                <th>Bristolbridge</th>
-                <td>0.7143</td>
-                <td><em>p</em> &lt; 0.01</td>
-                <td>0.5714</td>
+                <td>0.511</td>
+                <td><em>p</em> &lt; 0.05</td>
+                <td>0.778</td>
                 <td><em>p</em> &lt; 0.01</td>
             </tr>
             <tr>
-                <th>Clockbuilding</th>
-                <td>0.0714</td>
+                <th>Bristol Bridge</th>
+                <td>0.714</td>
+                <td><em>p</em> &lt; 0.05</td>
+                <td>0.571</td>
+                <td><em>p</em> &lt; 0.05</td>
+            </tr>
+            <tr>
+                <th>Clock Building</th>
+                <td>0.071</td>
                 <td></td>
-                <td>0.2143</td>
+                <td>0.214</td>
                 <td></td>
             </tr>
             <tr>
                 <th>Fog</th>
-                <td>0.4444</td>
+                <td>0.444</td>
                 <td></td>
-                <td>0.3889</td>
+                <td>0.389</td>
                 <td></td>
             </tr>
             <tr>
                 <th>Foyer</th>
-                <td>0.3333</td>
+                <td>0.333</td>
                 <td></td>
-                <td>0.3333</td>
+                <td>0.333</td>
                 <td></td>
             </tr>
             <tr>
                 <th>Indoor</th>
-                <td>0.5238</td>
+                <td>0.524</td>
                 <td></td>
-                <td>0.8095</td>
-                <td><em>p</em> &lt; 0.01</td>
+                <td>0.810</td>
+                <td><em>p</em> &lt; 0.05</td>
             </tr>
             <tr>
                 <th>Memorial</th>
-                <td>0.5000</td>
+                <td>0.500</td>
                 <td></td>
-                <td>0.4286</td>
+                <td>0.429</td>
                 <td></td>
             </tr>
             <tr>
                 <th>Synagogue</th>
-                <td>0.7857</td>
+                <td>0.786</td>
                 <td><em>p</em> &lt; 0.01</td>
-                <td>0.8571</td>
+                <td>0.857</td>
                 <td><em>p</em> &lt; 0.01</td>
             </tr>
             <tr>
                 <th>Tahoe</th>
-                <td>0.4667</td>
+                <td>0.467</td>
                 <td></td>
-                <td>0.4667</td>
+                <td>0.467</td>
                 <td></td>
             </tr>
             <tr>
                 <th>Tinterna</th>
-                <td>0.8667</td>
-                <td><em>p</em> &lt; 0.01</td>
-                <td>0.8667</td>
-                <td><em>p</em> &lt; 0.01</td>
+                <td>0.867</td>
+                <td><em>p</em> &lt; 0.05</td>
+                <td>0.867</td>
+                <td><em>p</em> &lt; 0.05</td>
             </tr>
             <tr>
                 <th>Tree</th>
-                <td>0.2381</td>
+                <td>0.238</td>
                 <td></td>
-                <td>0.7143</td>
-                <td><em>p</em> &lt; 0.01</td>
+                <td>0.714</td>
+                <td><em>p</em> &lt; 0.05</td>
             </tr>
             <tr>
                 <th>Venice</th>
-                <td>0.1429</td>
+                <td>0.143</td>
                 <td></td>
-                <td>0.7143</td>
-                <td><em>p</em> &lt; 0.01</td>
+                <td>0.714</td>
+                <td><em>p</em> &lt; 0.05</td>
             </tr>
         </tbody>
     </table>
 </div>
 
-<div class="slide" id="colourwarstats">
-    <h2>Colourwar</h2>
-    <div class="box">
-        <h3><em><span id="colourwarstats-comparisons">22062</span></em> comparisons made so far</h3>
-        <h3><em><span id="colourwarstats-participants">908</span></em> participants</h3>
-        <h3><em><span id="colourwarstats-users">65</span></em> registered users</h3>
-    </div>
-</div>
-
 <div class="slide">
-    <h2>In conclusion</h2>
-    <p>you cant just sling stuff on the web and hope for the best</p>
+    <h2>Colourwar<div><a href="http://colourwar.com" target="_blank">http://colourwar.com</a></h2>
+    <img class="twocol" src="images/parallelcoords/atriumnight-full-augmented.png"/>
+    <img class="twocol" src="images/parallelcoords/indoor-full-augmented.png"/>
 </div>
 
 <div class="slide">
     <h2>Thanks!</h2>
     <p>Any Questions?</p>
-    <img src="haters.gif"/>
+    <img src="images/haters.gif"/>
 </div>
 
 <p class="deck-status">
@@ -336,6 +441,7 @@
 <script src="deck/extensions/goto/deck.goto.js"></script>
 <script src="deck/extensions/status/deck.status.js"></script>
 <script src="deck/extensions/hash/deck.hash.js"></script>
+<!-- <script src="deck/extensions/scale/deck.scale.js"></script> -->
 <script src="extensions/events/deck.events.js"></script>
 
 <!-- MathJax -->
@@ -350,6 +456,10 @@
         $.ajaxSetup({ cache: false });
 
         var testimg = new Image();
+        testimg.onerror = function(){
+            console.log("Cannot see outside world :(");
+        }
+
         testimg.onload = function(){
             console.log("Outside world accessible");
             $("#nott-frame").html('<iframe src="http://hdri.cs.nott.ac.uk" frameborder="0"/>');
