@@ -54,6 +54,10 @@
 	        border-right: 1px solid #ACA095;
 	    }
 
+        .deck-container .notes{
+            display:none;
+        }
+
     </style>
 
 	<script src="deck/modernizr.custom.js"></script>
@@ -488,6 +492,13 @@
     $(function() {
         // Deck initialization
         $.deck('.slide');
+
+        $('.slide').bind('deck.becameCurrent', function(event){
+            var notes = $('.notes', this); 
+            if(notes.length){
+                console.log(notes.text());
+            }
+        });
 
         $.ajaxSetup({ cache: false });
 
