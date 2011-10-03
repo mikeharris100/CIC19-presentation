@@ -65,19 +65,20 @@
 <body class="deck-container">
 
 <div class="slide" id="title">
-    <h1>Comparing a Pair of Paired Comparison Experiments <div>Examining the Validity of Web-Based Psychophysics</div></h1>
+    <h1>Comparing a Pair of Paired Comparison Experiments<div>Examining the Validity of Web-Based Psychophysics</div></h1>
     <h2>Michael D. Harris,<br/>Graham D. Finlayson</h2>
 </div>
 
 <div class="slide">
     <h2>Paired Comparisons</h2>
     <img src="images/pears.png" style="max-height:50%; max-width:100%;"/>
-    <p>paired comparisons have become de facto for observer preference</p>
-    <p>estimate time to set up / num participants</p>
-    <ul>
-        <li>How many of you have performed a paired comparison experiment?</li>
-        <li>How many of those were satisfied with the numbers of participants?</li>
-    </ul>
+    <div class="notes">
+        Paired comparisons have become de facto for observer preference
+        Estimate time to set up / num participants
+    
+        How many of you have performed a paired comparison experiment?
+        How many of those were satisfied with the numbers of participants?
+    </div>
 </div>
 
 <div class="slide">
@@ -92,17 +93,20 @@
             No control over viewing conditions
             <ul>
                 <li>Hopefully lots of different viewing conditions will 'come out in the wash'</li>
-                <li>Maybe no control is a good thing? - real-world data</li>
+                <li>Maybe no control is a good thing?</li>
             </ul>
         </li>
     </ul>
+    <div class="notes">
+        "No control is a good thing" - real-world data?
+    </div>
 </div>
 
 <div class="slide">
     <h2>Web-Based Research Success Stories<div><img src="images/nyan.gif" style="float:left; height:1em;" /></div></h2>
     <ul>
         <li>Moroney's colour naming experiment</li>
-        <li class="slide">Randall Munroe<img src="images/xkcdcolor.png"/></li>
+        <li class="slide">Randall Munroe<img height="300" width="300" src="images/xkcdcolor.png"/></li>
     </ul>
 </div>
 
@@ -122,20 +126,20 @@
         <div>Image Quality Ranking Index</div>
     </h2>
     <div class="box" style="width:30%; margin:0 auto; padding:2em;">$$ IQRI_{t} = \frac{v}{w_{t} + \frac{d_{t}}{2}} $$</div>
-    <ul>
-        <li>odd scale</li>
-        <li>division by zero</li>
-        <li>designed for unbalanced</li>
-    </ul>
+    <div class="notes">
+        odd scale
+        division by zero
+        designed for unbalanced
+    </div>
 </div>
 
 <div class="slide">
     <h2>Our Experiment</h2>
     <ul>
-        <li>controlled environment</li>
-        <li>setup to ISO standard</li>
-        <li>same images</li>
-        <li>observers were from other departments at university (and were na&iuml;ve to the purpose)</li>
+        <li>Controlled environment</li>
+        <li>Setup to ISO standard</li>
+        <li>Same images</li>
+        <li>Observers were from other departments at university (and were na&iuml;ve to the purpose)</li>
     </ul>
 </div>
 
@@ -282,10 +286,24 @@
     <h2>Limitations of the Web</h2>
     <ul>
         <li>Uncalibrated conditions</li>
-        <li>ICC profiles - this experiment did not use, but others might</li>
+        <li>ICC profiles</li>
         <li>f.lux <em>et al.</em></li>
-        <li>screen resolutions</li>
+        <li>Screen resolutions</li>
     </ul>
+    <div class="notes">
+        ICC profiles - this experiment did not use, but others might
+    </div>
+</div>
+
+<div class="slide">
+    <h2>In Conclusion</h2>
+    <blockquote>
+        <p>I think you'll find it's a bit more complicated than that.</p>
+    </blockquote>
+    <div class="notes">
+        Moving your lab-based paired comparison experiment onto the web is not a "fire and forget" exercise
+        You (probably) won't get similar results
+    </div>
 </div>
 
 <div class="slide">
@@ -294,19 +312,12 @@
         <p>Maybe no control is a good thing?</p>
         <p><cite>Me, just a minute ago</cite></p>
     </blockquote>
-</div>
-
-<div class="slide">
-    <h2>In Conclusion</h2>
-    <p>Moving your lab-based paired comparison experiment onto the web is not a "fire and forget" exercise</p>
-    <blockquote>
-        <p>I think you'll find it's a bit more complicated than that.</p>
-    </blockquote>
-</div>
-
-<div class="slide">
-    <h2>Other Possibilities</h2>
-    <p>Are other experiments better than TMOs? C2G?</p>
+    <div class="notes">
+        Web based data is still useful
+        where do people look at images? - at home
+        whats the biggest independent photographic library - Facebook
+        Are other experiments better than TMOs? C2G?
+    </div>
 </div>
 
 <div class="slide">
@@ -503,7 +514,7 @@
         $('.slide').bind('deck.becameCurrent', function(event){
             var notes = $('.notes', this); 
             if(notes.length){
-                console.log(notes.text());
+                console.log("\n\n\n\n\n\n\n\n" + notes.text());
             }
         });
 
