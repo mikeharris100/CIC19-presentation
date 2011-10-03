@@ -18,11 +18,17 @@
 	box-shadow:$x $y $blur $color;
 }
 
+@font-face {
+  font-family: Collegiate;
+  src: url("COLLEGIA.ttf");
+}
+
+
 
 .deck-container {
 	color:#004C67;
-	font-family: "Helvetica Neue", Helvetica, Arial;
-	font-size:1.4em;
+	font-family: Collegiate, "HelveticaNeue-Light", Helvetica, Arial;
+	font-size:250%;
 	width:100%;
 	padding:0;
 	background: rgb(244,250,254); /* Old browsers */
@@ -37,14 +43,13 @@
 	> .slide {
 		text-shadow:1px 1px 1px rgba(255,255,255,.5);
 	}
-	
+
 	h1, h2, h3, h4, h5, h6 {
 	}
 	
 	h1 {
-		color:#004C67;
 		font-weight:bold;
-		font-size:3em;
+		font-size:2em;
 		div {
 		    color:#ACA095;
 		    font-weight:normal;
@@ -55,11 +60,10 @@
 	    background:url(uealogo.png) no-repeat right;
 	    background-size: contain;
 	    padding: 0 3em 0 0;
-		color:#004C67;
 		font-weight:bold;
-		font-size:2em;
-		line-height:1.5em;
-		height:3em;
+		font-size:1.5em;
+		line-height:1.2em;
+		height:2.4em;
 		border-bottom: 1px solid #ACA095;
 		div {
 		    color: #ACA095;
@@ -68,10 +72,16 @@
 	}
 
 	h3 {
-		color:#000;
+		text-align:center;
 	}
 
+	ul{
+	    margin-bottom:0.5em;
+    }
+
 	table {
+	    font-family: "HelveticaNeue-Light", Helvetica, Arial;
+	    font-size:0.5em;
 	    margin: 0 auto;
 	    thead {
 	        border-bottom: 2px solid #ACA095;

@@ -1,7 +1,11 @@
+@font-face {
+  font-family: Collegiate;
+  src: url("COLLEGIA.ttf"); }
+
 .deck-container {
   color: #004C67;
-  font-family: "Helvetica Neue", Helvetica, Arial;
-  font-size: 1.4em;
+  font-family: Collegiate, "HelveticaNeue-Light", Helvetica, Arial;
+  font-size: 250%;
   width: 100%;
   padding: 0;
   background: #f4fafe;
@@ -22,9 +26,8 @@
   .deck-container > .slide {
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5); }
   .deck-container h1 {
-    color: #004C67;
     font-weight: bold;
-    font-size: 3em; }
+    font-size: 2em; }
     .deck-container h1 div {
       color: #ACA095;
       font-weight: normal; }
@@ -32,18 +35,21 @@
     background: url(uealogo.png) no-repeat right;
     background-size: contain;
     padding: 0 3em 0 0;
-    color: #004C67;
     font-weight: bold;
-    font-size: 2em;
-    line-height: 1.5em;
-    height: 3em;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    height: 2.4em;
     border-bottom: 1px solid #ACA095; }
     .deck-container h2 div {
       color: #ACA095;
       font-weight: normal; }
   .deck-container h3 {
-    color: #000; }
+    text-align: center; }
+  .deck-container ul {
+    margin-bottom: 0.5em; }
   .deck-container table {
+    font-family: "HelveticaNeue-Light", Helvetica, Arial;
+    font-size: 0.5em;
     margin: 0 auto; }
     .deck-container table thead {
       border-bottom: 2px solid #ACA095; }

@@ -29,22 +29,22 @@
     <!-- Specific to this page -->
     <style type="text/css">
 
-        .web-frame{
-            width:100%;
-            height:75%;
+        .slide img{
+            max-height:70%;
+            max-width:100%;
         }
 
+        .web-frame{
+            width:100%;
+            height:70%;
+        }
+        
         .web-frame iframe{
             width:100%;
             height:100%;
         }
 
-        .deck-container img{
-            max-height:75%;
-            max-width:100%;
-        }
-
-        .deck-container .twocol{
+        .slide .twocol{
             width:50%;
             float:left;
         }
@@ -314,9 +314,7 @@
         Colourwar
         <div><a href="http://colourwar.com" target="_blank">http://colourwar.com</a><small>&nbsp;&nbsp;&larr; shameless plug</small></div>
     </h2>
-    <div id="colourwar-frame" class="web-frame">
-        <img src="images/colourwar-screen.png"/>
-    </div>
+    <img src="images/colourwar-screen.png"/>
 </div>
 
 <div class="slide" id="colourwarstats">
@@ -325,8 +323,8 @@
         <div><a href="http://colourwar.com" target="_blank">http://colourwar.com</a></div>
     </h2>
     <div class="box" style="width:70%; margin:0 auto; padding:2em;">
-        <h3><em><span id="colourwarstats-comparisons">22062</span></em> comparisons made so far</h3>
-        <h3><em><span id="colourwarstats-participants">908</span></em> participants</h3>
+        <h3><em><span id="colourwarstats-comparisons">22236</span></em> comparisons made so far</h3>
+        <h3><em><span id="colourwarstats-participants">925</span></em> participants</h3>
         <h3><em><span id="colourwarstats-users">65</span></em> registered users</h3>
     </div>
 </div>
@@ -461,15 +459,17 @@
 
 <div class="slide">
     <h2>Thanks!</h2>
-    <p>Any Questions?</p>
+    <h3>Any Questions?</h3>
     <img src="images/haters.gif"/>
 </div>
 
+<!--
 <p class="deck-status">
 	<span class="deck-status-current"></span>
 	/
 	<span class="deck-status-total"></span>
 </p>
+-->
 
 <form action="." method="get" class="goto-form">
 	<label for="goto-slide">Go to slide:</label>
