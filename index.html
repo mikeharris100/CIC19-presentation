@@ -493,9 +493,10 @@
         $.deck('.slide');
 
         $('.slide').bind('deck.becameCurrent', function(event){
+            console.log(Array(20).join("\n"));
             var notes = $('.notes', this); 
             if(notes.length){
-                console.log("\n\n\n\n\n\n\n\n" + notes.text());
+                console.log(notes.text());
             }
         });
 
