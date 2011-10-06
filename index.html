@@ -11,7 +11,7 @@
 
 	<meta name="description" content="Comparing a Pair of Paired Comparison Experiments: Examining the Validity of Web-Based Psychophysics">
 	<meta name="author" content="Michael D. Harris, Graham D. Finlayson">
-	<meta name="viewport" content="width=1024, user-scalable=no">
+	<meta name="viewport" content="width=800, user-scalable=no">
 
 	<!-- Core and extension CSS files -->
 	<link rel="stylesheet" href="deck/core/deck.core.css">
@@ -70,11 +70,26 @@
     <h2>Paired Comparisons</h2>
     <img src="images/pears.png" style="max-height:50%; max-width:100%;"/>
     <div class="notes">
-        Paired comparisons have become de facto for observer preference
-        Estimate time to set up / num participants
-    
+        - You have a bunch of things (in our case images) you want to rank by user preference
+
+        - Paired comparisons have become de facto for observer preference
+        
+        - Some of you have taken one of mine
+        -- They are boring, no?
+        
+        - long time to setup
+        -- design interface
+        -- setup viewing environment
+        -- scheduling appointments with participants
+        -- sitting with participants
+        
+        - return on investment (num particpants) is low
+        
+        - There exists a hypothesis....
+        <!--
         How many of you have performed a paired comparison experiment?
         How many of those were satisfied with the numbers of participants?
+        -->
     </div>
 </div>
 
@@ -95,16 +110,42 @@
         </li>
     </ul>
     <div class="notes">
-        "No control is a good thing" - real-world data?
+        - Minimal setup time
+
+        - Setup once  - lots of observers - good ROI
+
+        - "No control is a good thing" - real-world data?
     </div>
 </div>
 
 <div class="slide">
-    <h2>Successes in Web-Based Research<div><img src="images/nyan.gif" style="float:left; height:1em;" /></div></h2>
+    <h2>Successes in Web-Based Research<!--<div><img src="images/nyan.gif" style="float:left; height:1em;" /></div>--></h2>
     <ul>
         <li>Moroney's colour naming experiment</li>
         <li class="slide">Randall Munroe<img height="300" width="300" src="images/xkcdcolor.png"/></li>
     </ul>
+    <div class="notes">
+        Moroney had about 1k particpants
+
+        ...Randall had over 200k participants!
+
+        But, these are both surveys - presentation doesn't matter
+    </div>
+</div>
+
+<div class="slide">
+    <h2>
+        Tone Mapping Operators
+        <div>(TMOs)</div>
+    </h2>
+    <div class="twocol">
+        <img src="images/TMOs/bristolb_EMPJ.jpg" style="height:32%;" />
+        <img src="images/TMOs/bristolb_filter.jpg" style="height:32%;" />
+    </div>
+    <div class="twocol">
+        <img src="images/TMOs/bristolb_GD.jpg" style="height:32%;" />
+        <img src="images/TMOs/bristolb_Mantiuk08.jpg" style="height:32%;" />
+    </div>
 </div>
 
 <div class="slide">
@@ -115,6 +156,20 @@
     <div id="nott-frame" class="web-frame">
         <img src="images/nott-screen.jpg"/>
     </div>
+    <div class="notes">
+        - Let's refer to this as the web experiment
+    </div>
+</div>
+
+<div class="slide">
+    <h2>Our Experiment</h2>
+    <ul>
+        <li>Controlled environment</li>
+        <li>Setup to ISO standard (ISO 3664:2009)</li>
+        <li>Same images as the web experiment</li>
+        <li>Observers were from other research groups and departments at UEA (and were na&iuml;ve to the purpose)</li>
+    </ul>
+    <img src="images/lab-screen.png" style="height:30%;"/>
 </div>
 
 <div class="slide">
@@ -124,20 +179,15 @@
     </h2>
     <div class="box" style="width:30%; margin:0 auto; padding:2em;">$$ IQRI_{t} = \frac{v}{w_{t} + \frac{d_{t}}{2}} $$</div>
     <div class="notes">
-        odd scale
-        division by zero
-        designed for unbalanced
-    </div>
-</div>
+        - Normally we would use Thurstone's Law
+        -- These guys didn't
+        -- original data is not available to produce our own Thurstonian analysis
+        -- we're stuck with IQRI
 
-<div class="slide">
-    <h2>Our Experiment</h2>
-    <ul>
-        <li>Controlled environment</li>
-        <li>Setup to ISO standard</li>
-        <li>Same images</li>
-        <li>Observers were from other departments at university (and were na&iuml;ve to the purpose)</li>
-    </ul>
+        - odd scale
+        -- division by zero
+        -- designed for unbalanced paired comparisons
+    </div>
 </div>
 
 <div class="slide">
@@ -218,6 +268,14 @@
             </tr>
         </tbody>
     </table>
+    <div class="notes">
+        - Kendall rank correlation coefficient
+        -- counts position swaps
+    
+        Most and least correlated scenes
+        - Synagogue (tinterna has higher tau, but is not as significant due to less TMOs)
+        - Clock Building
+    </div>
 </div>
 
 <div class="slide">
@@ -227,6 +285,10 @@
     </div>
     <div class="twocol">
         <img src="images/parallelcoords/clockbuilding.png"/>
+    </div>
+    <div class="notes">
+        What could explain this?
+        - Context?
     </div>
 </div>
 
@@ -244,14 +306,9 @@
         <div>Flickr search for "HDR"</div>
     </h2>
     <img src="images/flickr-hdr/hdr-2.png" />
-</div>
-
-<div class="slide">
-    <h2>
-        Discussion
-        <div>Flickr search for "HDR"</div>
-    </h2>
-    <img src="images/flickr-hdr/hdr-3.png" />
+    <div class="notes">
+        It can certainly be said that these images are beautiful and that they have artistic merit, but they are not accurate representations of how the scene actually appeared.
+    </div>
 </div>
 
 <div class="slide">
@@ -260,6 +317,9 @@
         <div>Perceptible TMO differences</div>
     </h2>
     <img src="images/parallelcoords/clockbuilding-augmented.png" />
+    <div class="notes">
+        Score difference test
+    </div>
 </div>
     
 <div class="slide">
@@ -310,10 +370,10 @@
         <p><cite>Me, just a minute ago</cite></p>
     </blockquote>
     <div class="notes">
-        Web based data is still useful
-        where do people look at images? - at home
-        whats the biggest independent photographic library - Facebook
-        Are other experiments better than TMOs? C2G?
+        - Web based data is still useful
+        - If you're doing medical imaging or something maybe it's reasonable to expect controlled conditions, but...
+        - where do people look at images? - at home
+        - whats the biggest independent photographic library - Facebook
     </div>
 </div>
 
@@ -334,6 +394,10 @@
         <h3><em><span id="colourwarstats-comparisons">22236</span></em> comparisons made so far</h3>
         <h3><em><span id="colourwarstats-participants">925</span></em> participants</h3>
         <h3><em><span id="colourwarstats-users">65</span></em> registered users</h3>
+    </div>
+    <div class="notes">
+        The web experiment has roughly 2500 comparisons in well over a year of running
+        We're at over 20000 in just over 3 months
     </div>
 </div>
 
@@ -450,6 +514,11 @@
             </tr>
         </tbody>
     </table>
+    <div class="notes">
+        A few scenes where the results are quite different
+        - 4 of them are significantly similar by the results from colourwar
+        - lets look at the first 2 - atrium night and indoor
+    </div>
 </div>
 
 <div class="slide">
@@ -462,6 +531,11 @@
     </div>
     <div class="twocol">
         <img src="images/parallelcoords/indoor-full-augmented.png"/>
+    </div>
+    <div class="notes">
+        - Colourwar is still young, we have lots of plans for it.
+        - Hopefully in the future we'll be able to explain what causes the differences in the results
+        - and be able to say 'this is how you do online paired comparisons'
     </div>
 </div>
 
@@ -489,11 +563,12 @@
 <!-- Specific to this page -->
 <script type="text/javascript">
     $(function() {
+
         // Deck initialization
         $.deck('.slide');
 
         $('.slide').bind('deck.becameCurrent', function(event){
-            console.log(Array(20).join("\n"));
+            console.log(Array(30).join("\n"));
             var notes = $('.notes', this); 
             if(notes.length){
                 console.log(notes.text());
@@ -544,7 +619,7 @@
             });
 
        }
-        testimg.src= "http://colourwar.com/site_media/static/img/ucglogo.png";
+        testimg.src= "http://colourwar.com/site_media/static/img/ucglogo.png?" + escape(new Date());
 
     });
 </script>
